@@ -1,0 +1,121 @@
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM
+$ git init
+Initialized empty Git repository in F:/SWCM/.git/
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (master)
+$ ls
+product/  website/
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (master)
+$ echo "# SWCM" >> README.md
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (master)
+$ git init
+Reinitialized existing Git repository in F:/SWCM/.git/
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (master)
+$ git commit -m "first commit"
+[master (root-commit) 434dd2e] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (master)
+$ git branch -M main
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (main)
+$ git remote add origin https://github.com/eslammohammed24/SWCM.git
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 223 bytes | 223.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/eslammohammed24/SWCM.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (main)
+$ git add .
+warning: in the working copy of 'product/api.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'product/requirements.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'website/index.php', LF will be replaced by CRLF the next time Git touches it
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   product/api.py
+        new file:   product/requirements.txt
+        new file:   website/index.php
+
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (main)
+$ git commit -m "adding project"
+[main 76a015d] adding project
+ 3 files changed, 49 insertions(+)
+ create mode 100644 product/api.py
+ create mode 100644 product/requirements.txt
+ create mode 100644 website/index.php
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (main)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 980 bytes | 980.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/eslammohammed24/SWCM.git
+   434dd2e..76a015d  main -> main
+
+Eslam Mohamed@DESKTOP-DT6PG2U MINGW64 /f/SWCM (main)
+$
+PS F:\SWCM> git branch sprints 
+PS F:\SWCM> git branch
+* main
+  sprints
+PS F:\SWCM> git switch sprints
+Switched to branch 'sprints'
+  main
+* sprints
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote:      https://github.com/eslammohammed24/SWCM/pull/new/sprints
+remote:
+ * [new branch]      sprints -> sprints
+branch 'sprints' set up to track 'https://github.com/eslammohammed24/SWCM.git/sprints'.
+PS F:\SWCM> git branch
+  main
+* sprints
+PS F:\SWCM> git add .  
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'product/api.py', LF will be replaced by CRLF the next time Git touches it
+PS F:\SWCM> git commit -m "adding product 6 & editing on readme.md"
+[sprints d53688a] adding product 6 & editing on readme.md
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+PS F:\SWCM> git push 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 494 bytes | 247.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/eslammohammed24/SWCM.git
+   76a015d..d53688a  sprints -> sprints
+PS F:\SWCM> 
+==============================================
+last step
+============
+1-compare and pull request
+2-creat pull request
+3-merge pull request
+
